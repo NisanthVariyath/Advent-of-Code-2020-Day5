@@ -7,16 +7,26 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
+
+/**
+ * AOC Day5
+ * Binary Boarding
+ * 
+ * @author Nisanth Variyath
+ * @version 12/05/2020
+ */
+
 public class BinaryBoarding {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
+
+		// PART ONE BEGINS HERE
 		double high = 127;
 		double low = 0;
 		double sum;
 		double row = 0, column = 0;
 		ArrayList<Integer> seatId = new ArrayList<>();
-		// double result;
 
 		try {
 			BufferedReader br = new BufferedReader(new FileReader("src\\io\\zerotomastery\\day5\\input.txt"));
